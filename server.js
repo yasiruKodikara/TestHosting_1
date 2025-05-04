@@ -14,6 +14,7 @@ app.listen(HTTP_PORT,()=>{
     console.log(`server is running on ${HTTP_PORT}`)
 });
 
+app.use(express.static(path.join(_dirname,'dist/test-hosting-1')));
 //-----------------
 
 //POST request
